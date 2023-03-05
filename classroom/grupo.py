@@ -20,7 +20,8 @@ class Grupo:
 
     def __str__(self):
         if self._grupo:
-            return "Grupo de estudiantes: grupo predeterminado"
+            self._grupo = "grupo predeterminado"
+            return "Grupo de estudiantes: " + self._grupo
         else:
             return "Grupo de estudiantes: " + self._grupo
     
